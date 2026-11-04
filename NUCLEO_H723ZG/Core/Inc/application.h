@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-void test(void);
+void csp_app_init(void);
 
 #ifdef __cplusplus
 }

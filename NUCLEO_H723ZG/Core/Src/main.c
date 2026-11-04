@@ -155,7 +155,7 @@ int main(void)
       BSP_LED_Toggle(LED_GREEN);
       BSP_LED_Toggle(LED_YELLOW);
       BSP_LED_Toggle(LED_RED);
-
+      csp_app_init();
 
       /* ..... Perform your action ..... */
     }
