@@ -1,6 +1,8 @@
 #include "application.h"
 #include <cstdio>
 #include "csp/csp4cmsis.h"
+#include "cmsis_os2.h"
+#include "FreeRTOS.h"
 
 static osThreadAttr_t csp_thread_config(void);
 static void main_app_task(void * arg);

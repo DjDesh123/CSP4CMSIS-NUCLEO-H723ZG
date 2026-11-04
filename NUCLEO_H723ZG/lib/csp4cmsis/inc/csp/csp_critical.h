@@ -40,7 +40,7 @@
 #if defined(CMSIS_device_header)
   #include CMSIS_device_header
 #elif defined(CSP4CMSIS_DEVICE_HEADER)
-  #include CSP4CMSIS_DEVICE_HEADER
+  #include CSP4CMSIS_DEVICE_HEADER stm32h723zgtx.h
 #else
   #error "CSP4CMSIS: no device header. Pack builds get it from RTE_Components.h (CMSIS_device_header); without packs, define CSP4CMSIS_DEVICE_HEADER to the device header, e.g. \"stm32g4xx.h\" (Documentation/CSP4CMSIS_Configuration.md)"
 #endif
