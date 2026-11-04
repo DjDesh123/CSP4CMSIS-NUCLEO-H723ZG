@@ -17,7 +17,7 @@ void csp_app_init(void){
 }
 
 static osThreadAttr_t csp_thread_config(void){
-	osThreadAtrr_t attr = {
+	osThreadAttr_t attr = {
 			attr.name = "MainApp",
 			attr.stack_mem = mainAppStack,
 			attr.stack_size = sizeof(mainAppStack),
@@ -32,7 +32,7 @@ static void main_app_task(void* arg){
 	// to inform the compiler that the pointer is not being used
 	(void)arg;
 
-	const ui32_t tick_time = 1000U;
+	const uint32_t tick_time = 1000U;
 
 	osDelay(tick_time);
 
