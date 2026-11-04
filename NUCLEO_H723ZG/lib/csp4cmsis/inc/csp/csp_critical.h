@@ -51,6 +51,8 @@
 // -- keeps the library RTOS-agnostic. Projects define this to match
 // whatever their underlying RTOS treats as configMAX_SYSCALL_INTERRUPT_
 // PRIORITY (or equivalent), via a compiler -D flag -- not hardcoded here.
+
+#define CSP4CMSIS_MAX_SYSCALL_INTERRUPT_PRIORITY 5
 #ifndef CSP4CMSIS_MAX_SYSCALL_INTERRUPT_PRIORITY
 #error "Define CSP4CMSIS_MAX_SYSCALL_INTERRUPT_PRIORITY to match your RTOS's critical-section threshold"
 #endif
