@@ -32,6 +32,8 @@
 // project's MCU. Builds without packs (STM32CubeIDE, vendor SDK makefiles)
 // have no RTE_Components.h; they name the device header themselves with
 // CSP4CMSIS_DEVICE_HEADER, e.g. -DCSP4CMSIS_DEVICE_HEADER='"stm32g4xx.h"'.
+#define CSP4CMSIS_DEVICE_HEADER "stm32h723xx.h"
+
 #if defined(__has_include)
   #if __has_include("RTE_Components.h")
     #include "RTE_Components.h"
@@ -40,7 +42,7 @@
 #if defined(CMSIS_device_header)
   #include CMSIS_device_header
 #elif defined(CSP4CMSIS_DEVICE_HEADER)
-  #include CSP4CMSIS_DEVICE_HEADER stm32h723zgtx.h
+  #include CSP4CMSIS_DEVICE_HEADER
 #else
   #error "CSP4CMSIS: no device header. Pack builds get it from RTE_Components.h (CMSIS_device_header); without packs, define CSP4CMSIS_DEVICE_HEADER to the device header, e.g. \"stm32g4xx.h\" (Documentation/CSP4CMSIS_Configuration.md)"
 #endif
