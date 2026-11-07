@@ -6,8 +6,6 @@
 
 using namespace csp;
 
-
-
 static osThreadAttr_t csp_thread_config(void);
 static void main_app_task(void * arg);
 
@@ -27,7 +25,7 @@ public:
 	}
 };
 
-// reciver is also inherriting from CSProcessStatic
+// receiver is also inherits from CSProcessStatic
 class Receiver : public CSProcessStatic<512> {
     Chanin<Message> inA, inB;
 public:
